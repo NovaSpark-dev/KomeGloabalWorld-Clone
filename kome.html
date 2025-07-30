@@ -40,7 +40,7 @@
                 <div class="name">LG 1.5HP Split Air Conditioner</div>
                 <div class="price">&#8358; 200,000.00</div>
                 <button class="tocart" onclick="
-                    toCart()
+                    toCart(this)
                 ">Add To Cart</button>
             </div>
         </div>
@@ -49,7 +49,9 @@
             <div class="tooltip">
                 <div class="name">NutriBullet Pro 900W Blender</div>
                 <div class="price">&#8358; 50,000.00</div>
-                <button class="tocart">Add To Cart</button>
+                <button class="tocart" onclick="
+                    toCart(this)
+                "Add To Cart</button>
             </div>
         </div>
             <div class="products">
@@ -57,7 +59,9 @@
                 <div class="tooltip">
                     <div class="name">Hisense 250L Chest Freezer</div>
                     <div class="price">&#8358; 150,000.00</div>
-                    <button class="tocart">Add To Cart</button>
+                    <button class="tocart" onclick="
+                    toCart(this)
+                ">Add To Cart</button>
                 </div>
             </div>
             <div class="products">
@@ -65,7 +69,9 @@
                 <div class="tooltip">
                     <div class="name">Nescafe Dolce Gusto Coffee Machine</div>
                     <div class="price">&#8358; 45,000.00</div>
-                    <button class="tocart">Add To Cart</button>
+                    <button class="tocart" onclick="
+                    toCart(this)
+                ">Add To Cart</button>
                 </div>
             </div>
     </div>
@@ -118,15 +124,13 @@
     </div>
 
     <script>
-        function toCart () {
-                let buttonElement = document.querySelector('.tocart');
-
-                if (buttonElement.innerText === 'Add to Cart') {
-                    buttonElement.innerHTML = 'Remove from cart';
-                } else {
-                    buttonElement.innerHTML = 'Add to Cart';
-                }
-            }
+        function toCart(buttonElement) {
+    if (buttonElement.innerText === 'Add To Cart') {
+        buttonElement.innerText = 'Remove From Cart';
+    } else {
+        buttonElement.innerText = 'Add To Cart';
+    }
+}
     </script>
 </body>
 </html>
