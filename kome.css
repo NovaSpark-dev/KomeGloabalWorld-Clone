@@ -386,10 +386,10 @@ div{
     }
 
     .bottom-header {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding-top: 10px;
+        flex-direction: row;
+        align-items: center;
+        height: 120px;
+        padding: 25px 10px 10px 10px;
     }
 
     .left-section {
@@ -398,10 +398,12 @@ div{
     }
 
     .middle-section {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
         align-items: center;
         gap: 10px;
-        padding-top: 10px;
+        padding: 10px;
     }
 
     .right-section {
@@ -437,7 +439,7 @@ div{
 
     .seller {
         flex-direction: column;
-        gap: 40px;
+        gap: 140px;
     }
 
     .descrip {
@@ -507,7 +509,7 @@ div{
     }
 
     .middle-section {
-        flex-direction: column;
+        flex-direction: row;
         gap: 8px;
     }
 
@@ -544,12 +546,12 @@ div{
 
     .seller {
         flex-direction: column;
-        gap: 30px;
+        gap: 140px;
     }
 
     .descrip {
         flex-direction: column;
-        gap: 20px;
+        column-gap: 20px;
     }
 
     .thing {

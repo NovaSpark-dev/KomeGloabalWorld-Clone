@@ -39,7 +39,9 @@
             <div class="tooltip">
                 <div class="name">LG 1.5HP Split Air Conditioner</div>
                 <div class="price">&#8358; 200,000.00</div>
-                <button class="tocart">Add To Cart</button>
+                <button class="tocart" onclick="
+                    toCart()
+                ">Add To Cart</button>
             </div>
         </div>
         <div class="products">
@@ -114,5 +116,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function toCart () {
+                let buttonElement = document.querySelector('.tocart');
+
+                if (buttonElement.innerText === 'Add to Cart') {
+                    buttonElement.innerHTML = 'Remove from cart';
+                } else {
+                    buttonElement.innerHTML = 'Add to Cart';
+                }
+            }
+    </script>
 </body>
 </html>
